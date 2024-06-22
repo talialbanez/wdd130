@@ -1,0 +1,62 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-color: #4682B4;
+  --secondary-color: #20B2AA;
+  --accent1-color: #FF7F50;
+  --accent2-color: #FAFAD2;
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+  --nav-bg-color: #20B2AA;
+  --nav-link-color: #FFFFFF;
+  --nav-hover-link-color: #FF7F50;
+  --nav-hover-bg-color: #4682B4;
+}
+
+/* Body Selector */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Headings Grouping Selector */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header Selector */
+header {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+}
+
+/* Paragraph Selector */
+p {
+  padding: 10px 0;
+}
+
+/* Navigation Selector */
+nav {
+  background-color: var(--nav-bg-color);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-bg-color);
+}
