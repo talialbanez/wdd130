@@ -20,12 +20,21 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+header img {
+    max-height: 50px; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -82,18 +91,58 @@ section h2 {
     color: var(--primary-color);
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventures figure {
+    margin: 0;
+    position: relative;
+}
+
+.adventures img {
+    width: 100%;
+    display: block;
+}
+
+.adventures figcaption {
+    position: absolute;
+    bottom: 0;
+    background: var(--hero-overlay-color);
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    text-align: center;
     padding: 20px;
 }
 
-footer a {
-    text-decoration: none;
-    margin: 0 10px;
+footer .social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .social-icons a {
+    margin-left: 5px;
 }
 
 footer a img {
     vertical-align: middle;
+    max-height: 30px; 
 }
